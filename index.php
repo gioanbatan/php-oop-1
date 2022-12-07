@@ -76,6 +76,21 @@ class Movie
 
     echo $testMovie->showAll();
     ?>
+
+    <br>
+
+    <?php
+    $batmanMovie = new Movie();
+    $batmanMovie->title = "Batman";
+    $batmanMovie->year = 1989;
+    $batmanMovie->genre = ["action", "adventure"];
+    $batmanMovie->description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit debitis saepe, maxime veniam, commodi dolores ipsam id vero odit iste ut nostrum. Aperiam quasi, quis neque ab accusantium nulla voluptates?";
+    $batmanMovie->director = "Tim Burton";
+    $batmanMovie->actors = ["Michael Keaton", "Jack Nicholson", "Kim Basinger"];
+    $batmanMovie->publisher = "Warner Bros.";
+
+    echo $batmanMovie->showAll();
+    ?>
 </body>
 
 </html>
